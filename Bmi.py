@@ -3,8 +3,8 @@ from os import sys
 
 def main():
     name = input("Enter Name : ")
-    height_m = input("Height  : ")
-    weight_kg = input("Weight  : ")
+    height_m = input("Height (m) : ")
+    weight_kg = input("Weight (kg) : ")
 
     height_m = float(height_m)
     weight_kg = float(weight_kg)
@@ -21,12 +21,11 @@ def main():
             return name + " is Overweight"
         else:
             return name + " is Obesity"
-
-    result = bmi_calculator(name, height, weight)
+result = bmi_calculator(name, height_m, weight_kg)
     print(result)
     print()
-    print(Press ENTER to check again
-    Press "q" to quit :)
+    print('''Press ENTER to check again
+    Press "q" to quit :''')
     choice = input()
     print()
     if choice == 'q':
